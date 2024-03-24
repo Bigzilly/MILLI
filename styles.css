@@ -1,0 +1,156 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,20,0.7),rgba(0,0,20,0.7)),url(portfolio-details-3.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	position: relative;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+}
+#focus{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 1;
+	background: url(portfolio-details-3.jpg);
+	background-attachment: fixed;
+	border-radius: 50%;
+	top: calc(50% - 140px);
+	left: calc(50% - 140px);
+	z-index: 1;
+}
+.navbar{
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 40px;
+	cursor: pointer;
+	position:relative;
+	z-index: 2;
+}
+#menu{
+	width: 50px;
+	height: 50px;
+	background: violet;
+	text-align: center;
+	position: fixed;
+	right: 30px;
+	top: 20px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#cart{
+	width: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+	position:relative;
+	z-index: 2;
+}
+#navy{
+	width: 200px;
+	height: 100vh;
+	position: fixed;
+	right: -250px;
+	top: 0;
+	background: linear-gradient(45deg,#87adfe,#ff77cd);
+	z-index: 2;
+	transition: 0.5s;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+.content h1{
+	font-family: Algerian;
+	font-size: 60px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: #6474b4;
+	position:relative;
+	z-index: 2;
+}
+.content p{
+	font-size: 20px;
+	color: violet;
+	position:relative;
+	z-index: 2;
+}
+.content{
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.content .btn{
+	display: inline-block;
+	background: linear-gradient(45deg,#87adfe,#ff77cd);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+	position:relative;
+	z-index: 2;
+}
+.social-links{
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -80px;
+	bottom: 180px;
+	z-index: 2;
+}
+.social-links a {
+	text-decoration: none;
+	color: violet;
+	padding-right: 20px;
+	font-size: 12px;
+	position:relative;
+}
+@media (max-width:991px){
+	.social-links{
+		position:absolute;
+		transform: rotate(-90deg);
+		bottom: 150px;
+		left: -100px;
+	}
+	#focus{
+	    width: 50px;
+	    height: 50px;
+	}
+	.content .btn{
+	    position:center;
+	    padding: 5px 15px;
+	    margin-top: 150px;
+	    margin-bottom: 60px;
+		right: -30px;
+	}
+	.content h1{
+		font-size: 45px;
+		margin-top: -40px;
+	    margin-bottom: 80px;
+		right: -30px;
+	}
+	.content p{
+		font-size: 15px;
+	    margin-top: -60px;
+	    margin-bottom: 100px;
+		right: -30px;
+	}
+}

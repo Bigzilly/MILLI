@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Testimonial</title>
+<style>
+#testimonial{
+	width: 100%;
+	padding: 70px 0;
+	background:linear-gradient(rgba(0,0,20,0.7),rgba(0,0,20,0.7)), url(IMG-20240317-WA0061.jpg);
+	background-size: cover;
+}
+.title-text p{
+    font-size: 40px;
+	font-style: bold;
+	color: violet;
+	font-family: Algerian;
+}
+.title-text h1{
+    color: #6474b4;
+}
+.testimonial-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.testimonial-col{
+	flex-basis: 28%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 15px 20px 5px violet;
+	cursor: pointer;
+	transition: transform .5s;
+	color: #6474b4;
+}
+.testimonial-col p{
+	font-size: 15px;
+}
+.user{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	color: white;
+}
+.user img{
+	width: 50px;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+.user-info img{
+	width: 20px;
+	margin-left: 10px;
+}
+.user-info small{
+	color: violet;
+}
+.testimonial-col:hover{
+	transform: translateY(-7px);
+}
+@media screen and (max-width: 991px){
+	.testimonial-col{
+		flex-basis: 100%;
+	}
+}
+</style>
+</head>
+<body>
+   <section id="testimonial">
+      <div class="title-text">
+	  <center>
+        <p>TESTIMONIALS</p>   
+        <h1>Reviews</h1>
+	  </center>
+     </div>
+     <div class="testimonial-row">
+     <div class="testimonial-col">
+	    <div class="user">
+		  <img src="Vira 20160729_224643.jpg">
+		  <div class="user-info">
+		     <h4>MR AND MRS WALLACE<img src="Twitter_2.png.png"></h4>
+			 <small>@vierakyewallace</small>
+		   </div>
+		  </div>
+	   <p>We have been in business with them for so long and we are happy about the way they go about their business,
+	   Their brands and collections are top notch"</p>
+	 </div>
+	 <div class="testimonial-col">
+	  <div class="user">
+		  <img src="happy user 1.jpg">
+		  <div class="user-info">
+		     <h4>JENNIFER AMANNING<img src="Facebook_2.png"></h4>
+			 <small>@jenniferam</small>
+		   </div>
+		  </div>
+	    <p>I have purchases their product long enough to say "they are authentic"</p>
+	 </div>
+	 <div class="testimonial-col">
+	  <div class="user">
+		  <img src="IMG-20201205-WA0002.jpg">
+		  <div class="user-info">
+		     <h4>EDMUND NELSON<img src="Instagram_2.png"></h4>
+			 <small>@nelsonedmund</small>
+		   </div>
+		  </div>
+	    <p>I love their collections</p>
+	 </div>
+     </div>
+    </section>
+</body>
+</html>

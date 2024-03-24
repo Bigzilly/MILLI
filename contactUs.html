@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Category</title>
+	<style>
+	    *{
+		    margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		.contact{
+		    position: relative;
+			min-height: 100vh;
+			padding: 50px 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background:linear-gradient(rgba(0,0,20,0.5),rgba(0,0,20,0.5)), url(portfolio-5.jpg);
+			background-size: cover;
+		}
+		.contact .content{
+		    max-width: 800px;
+			text-align: center;
+		}
+		.contact .content h2{
+		    font-size: 36px;
+			font-weight: 500;
+			color: violet;
+		}
+		.contact .content p{
+			font-weight: 300;
+			color: #fff;
+		}
+		.container{
+		    width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+		.container .contactInfo{
+		    width: 50%;
+			display: flex;
+			flex-direction: column;
+		}
+		.container .contactInfo .box{
+		    position: relative;
+			padding: 20px 0;
+			display: flex;
+		}
+		.container .contactInfo .box .icon img{
+		    min-width: 40px;
+			height: 40px;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			font-size: 22px;
+		}
+		.container .contactInfo .box .text{
+		    display: flex;
+			margin-left: 20px;
+			font-size: 16px;
+			color: #fff;
+			flex-direction: column;
+			font-weight: 300;
+		}
+		.container .contactInfo .box .text h3{
+		    font-weight: 500;
+			color: violet;
+		}
+		.contactForm{
+		    width: 40%;
+			padding: 40px;
+			background: #fff;
+		}
+		.contactForm h2{
+		    font-size: 30px;
+			color: #333;
+			font-weight: 500;
+		}
+		.contactForm .inputBox{
+		    position: relative;
+			width: 100%;
+			margin-top: 10px;
+		}
+		.contactForm .inputBox input, .contactForm .inputBox textarea{
+		    width: 100%;
+			padding: 5px 0;
+			font-size: 16px;
+			margin: 10px 0;
+			border: none;
+			border-bottom: 2px solid #333;
+			outline: none;
+			resize: none;
+		}
+		.contactForm .inputBox span{
+		    position: absolute;
+			left: 0;
+			padding: 5px 0;
+			font-size: 16px;
+			margin: 10px 0;
+			pointer-events: none;
+			transition: 0.5%;
+			color: #666;
+		}
+		.contactForm .inputBox input:focus ~ span,.contactForm .inputBox input:focus ~ span,
+		.contactForm .inputBox textarea:focus ~ span,.contactForm .inputBox textarea:focus ~ span{
+		    color: #e91e63;
+			font-size: 12px;
+			transform: translateY(-20px);
+		}
+		.contactForm .inputBox input[type="submit"]{
+		    width: 100px;
+			background: linear-gradient(45deg,#87adfe,#ff77cd);
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			padding: 10px;
+			font-size: 18px;
+		}
+		@media (max-width:991px){
+		    .contactForm{
+			    padding:50px;
+			}
+			.container{
+			    flex-direction: column; 
+			}
+			.container .contactInfo{
+			    margin-bottom: 40px;
+			}
+			.container .contactInfo, .contactForm{
+			    width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+		    <h2>Contact Us</h2>
+			<p>The brands and collections are top-notch. Feel free to contact us or send feedback
+			 concerning the collection, we would love to hearabout ur experiences with our site
+			 and product. Our lines are open 24/7.</p>
+		</div>
+		<div class="container">
+		    <div class="contactInfo">
+			    <div class="box">
+				    <div class="icon"><img src="map_marker.png"></div>
+					<div class="text">
+					    <h3>Address</h3>
+						<p>Big Apple,<br>Budumbram,<br>Kasoa</p>
+					</div>
+				</div>
+				<div class="box">
+				    <div class="icon"><img src="pngtree-cartoon-phone-icon-download-image_1147242.jpg"></div>
+					<div class="text">
+					    <h3>Phone</h3>
+						<p>0554046394</p>
+					</div>
+				</div>
+				<div class="box">
+				    <div class="icon"><img src="5772f9a3db8d6bcd6b1022e8d88074d3.jpg"></div>
+					<div class="text">
+					    <h3>Email</h3>
+						<p>nelsonmildred79@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactForm">
+			    <form>
+				    <h2>Send Message</h2>
+					<div class="inputBox">
+					    <input type="text" name="" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+					    <input type="text" name="" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+					    <textarea required="required"></textarea>
+						<span>Type your Message...</span>
+					</div>
+					<div class="inputBox">
+					    <input type="submit" name="" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</section>	
+</body>
+</html>
