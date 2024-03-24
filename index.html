@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEB DESIGN</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "container">
+	    <div id ="focus"></div>
+            <div class = "navbar"> 
+	            <img src = "logo.jpg" class= "logo">
+				<div id="navy">
+			        <nav>
+				       <ul>
+				            <li><a href="styles.html">Home</a></li>
+					        <li><a href="testimonials.html">Testimonials</a></li>
+					        <li><a href="categorystyle.html">Collections</a></li>
+							<li><a href="contactUs.html">Contact Us</a></li>
+				        </ul> 
+				    </nav>
+				</div>
+				<div id="menu">
+			    <img src = "63-512.png" id="cart">
+				</div>
+	        </div>
+		
+		    <div class= "content">
+		        <a href="servicestyle.html" class="btn">Services</a>
+			    <h1>FRESHNESS<br>HOME</h1>
+			    <p>Clothes and perfumes that are sure to make you feel good</p>
+			
+		    </div>
+		
+		    <div class="social-links">
+		        <a href="https://www.facebook.com/milly.nelson.397?mibextid=LQQJ4d/facebook.com">FACEBOOK</a>
+			    <a href="https://www.instagram.com/nelsonmilly8?igsh=OGQ5ZDc2ODk2ZA==/instagram.com">INSTAGRAM</a>
+			    <a href="twitter.com">TWITTER</a>
+		    </div>
+    </div>
+	
+	
+	<script>
+	    let focus = document.getElementById("focus");
+		let focusHalfWidth = focus.offsetWidth/2;
+		document.onmousemove = function(e){
+		    focus.style.left = e.pageX - focusHalfWidth + "px";
+			focus.style.top = e.pageY - focusHalfWidth + "px";
+		}
+	</script>
+	
+<script>
+    var menu = document.getElementById("menu") 
+    var navy = document.getElementById("navy")
+    var cart = document.getElementById("cart")
+	
+	navy.style.right = "-250px";
+	
+	menu.onclick = function(){
+	     if(navy.style.right == "-250px"){
+		     navy.style.right = "0";
+			 cart.src = "back.png";
+		 }
+		 else{
+		      navy.style.right = "-250px";
+			 cart.src = "63-512.png";
+		 }
+	}
+	
+	var scroll = new SmoothScroll('a[href*="#navy"]',{
+	   speed: 1000,
+	   speedAsDuration: true
+	});
+	
+</script>
+</body>
+</html>
